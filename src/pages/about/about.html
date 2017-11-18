@@ -14,8 +14,8 @@
   </div>
   <div text-center class="headline">
     <!-- pon tu nombre aqui -->
-    <h2>Alex Wong</h2>
-    <p>Software Developer</p>
+    <h2>{{datos.nombre}}</h2>
+    <p>{{datos.ocupacion}}</p>
   </div>
   <!-- lista de datos a partir de aqui -->
   <div>
@@ -24,30 +24,30 @@
         <ion-list no-lines>
           <ion-item>
             <ion-icon name="flag" item-start></ion-icon>
-            <h3>Origen</h3>
+            <h3>{{origen.titulo}}</h3>
             <p>
-              Lima, Peru
+              {{origen.dato}}
             </p>
           </ion-item>
           <ion-item>
             <ion-icon name="ios-mail-outline" item-start></ion-icon>
-            <h3>E-mail</h3>
+            <h3>{{email.titulo}}</h3>
             <p>
-              alwongm@gmail.com
+              {{email.dato}}
             </p>
           </ion-item>
           <ion-item>
             <ion-icon name="ios-phone-portrait-outline" item-start></ion-icon>
-            <h3>Telefono</h3>
+            <h3>{{telefono.titulo}}</h3>
             <p>
-              987531800
+              {{telefono.dato}}
             </p>
           </ion-item>
         </ion-list>
       </ion-slide>
       <ion-slide>
         <p>
-          Hola, soy Alex.
+          Hola, soy Alex. Tengo {{datos.edad}} años.
         </p>
       </ion-slide>
     </ion-slides>
