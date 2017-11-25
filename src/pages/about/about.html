@@ -22,25 +22,11 @@
     <ion-slides pager>
       <ion-slide>
         <ion-list no-lines>
-          <ion-item>
-            <ion-icon name="flag" item-start></ion-icon>
-            <h3>{{origen.titulo}}</h3>
+          <ion-item *ngFor="let elemento of informacion">
+            <ion-icon [name]="elemento.icono" item-start></ion-icon>
+            <h3>{{elemento.titulo}}</h3>
             <p>
-              {{origen.dato}}
-            </p>
-          </ion-item>
-          <ion-item>
-            <ion-icon name="ios-mail-outline" item-start></ion-icon>
-            <h3>{{email.titulo}}</h3>
-            <p>
-              {{email.dato}}
-            </p>
-          </ion-item>
-          <ion-item>
-            <ion-icon name="ios-phone-portrait-outline" item-start></ion-icon>
-            <h3>{{telefono.titulo}}</h3>
-            <p>
-              {{telefono.dato}}
+              {{elemento.dato}}
             </p>
           </ion-item>
         </ion-list>

@@ -17,20 +17,23 @@ export class AboutPage {
     edad: 28
   };
 
-  origen: any = {
-    titulo: "Origen",
-    dato: "Lima, Peru"
-  };
-
-  email: any = {
-    titulo: "E-mail",
-    dato: "alwongm@gmail.com"
-  };
-
-  telefono: any = {
-    titulo: "Telefono",
-    dato: "987531800"
-  };
+  informacion: any[] = [
+    {
+      titulo: "Origen",
+      dato: "Lima, Peru",
+      icono: "flag"
+    },
+    {
+      titulo: "E-mail",
+      dato: "alwongm@gmail.com",
+      icono: "mail"
+    },
+    {
+      titulo: "Telefono",
+      dato: "987531800",
+      icono: "call"
+    }
+  ];
 
   constructor(public navCtrl: NavController) {
 
