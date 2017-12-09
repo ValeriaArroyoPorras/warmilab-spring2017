@@ -7,14 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage implements OnInit {
 
-  nombre: string = "Alexander Wong";
-  ocupacion: string = "Software Engineer";
-  edad: number = 28;
+  nombre: string = "Valeria Arroyo";
+  ocupacion: string = "Estudiante";
+  edad: number = 13;
 
   datos: any = {
-    nombre: "Alexander Wong",
-    ocupacion: "Software Engineer",
-    edad: 28
+    nombre: "Valeria Arroyo",
+    ocupacion: "Estudiante",
+    edad: 13
   };
 
   informacion: any[] = [
@@ -25,16 +25,16 @@ export class AboutPage implements OnInit {
     },
     {
       titulo: "E-mail",
-      dato: "alwongm@gmail.com",
+      dato: "vmarroyoporras@gmail.com",
       icono: "mail"
     },
     {
       titulo: "Telefono",
-      dato: "987531800",
+      dato: "946587822",
       icono: "call"
     }, {
       titulo: "Hobby",
-      dato: "montar bicicleta",
+      dato: "patinar",
       icono: "alarm"
     }
   ];

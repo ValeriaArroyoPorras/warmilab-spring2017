@@ -30,18 +30,23 @@ export class HomePage implements OnInit {
     }
   ];
 
-  buttons = [
+  botones: any[] = [
     {
-      type: 'done',
-      class: ''
-    }, {
-      type: 'pending',
-      class: ''
-    }, {
-      type: 'all',
-      class: ''
+      color: "secondary",
+      grande: false,
+      texto: "terminados"
+    },
+    {
+      color: "danger",
+      grande: false,
+      texto: "pendientes"
+    },
+    {
+      color: "dark",
+      grande: true,
+      texto: "todos"
     }
-  ];
+  ]
 
   constructor(
     public navCtrl: NavController,
@@ -63,39 +68,21 @@ export class HomePage implements OnInit {
     }
   }
 
-  addTodo(todo: string) {
-    // codigo para agregar TODO
+  filtrarQuehaceres(texto: string) {
+    if (texto === "terminados") {
+        this.botones[0].grande = true ;
+        this.botones[1].grande = false ;
+        this.botones[2].grande = false ;
+    } else if (texto === "pendientes") {
+        this.botones[0].grande = false;
+        this.botones[1].grande = true ;
+        this.botones[2].grande = false ;
+    }else if (texto === "todos") {
+        this.botones[0].grande = false ;
+        this.botones[1].grande = false ;
+        this.botones[2].grande = true ;
+
+    }
   }
 
-  updateTodo(todo: any) {
-    // codigo para actualizar TODO
   }
-
-  showDone() {
-    // mostrar los TODOs terminados
-  }
-
-  showPending() {
-    // mostrar los TODOs pendientes
-  }
-
-  showAll() {
-    // mostrar todos los TODOs
-  }
-
-  private remapButtons(type: string) {
-    return this.buttons.map(b => {
-      if (b.type === type) {
-        b.class = 'button-large-md';
-      } else {
-        b.class = '';
-      }
-      return b;
-    });
-  }
-
-  buttonClass(type: string) {
-    return this.buttons.filter(b => b.type === type)[0].class;
-  }
-
-}
