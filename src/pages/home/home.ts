@@ -60,7 +60,7 @@ filtro:string="";
     this.agregarQuehacer("armar el cubo de rubik", true);
   }
 
- agregarQuehacer(nuevoQuehacer: string, terminado: boolean,componentes) {
+ agregarQuehacer(nuevoQuehacer: string, terminado: boolean) {
 
     if (nuevoQuehacer !== "") {
       this.quehaceres.push({

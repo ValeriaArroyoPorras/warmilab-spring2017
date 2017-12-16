@@ -1,16 +1,21 @@
 page-about {
 
   .banner {
+    position: relative;
 
     .background {
       opacity: 0.5;
     }
     .avatar {
+      position: absolute;
       border-radius: 50%;
       height: 120px;
+      right: 40%;
+      top: 85%
     }
   }
   .headline {
+    margin-top: 60px;
 
   }
 
