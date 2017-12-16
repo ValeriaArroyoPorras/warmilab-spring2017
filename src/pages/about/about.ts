@@ -44,8 +44,8 @@ export class AboutPage implements OnInit {
   }
 
   ngOnInit() {
-    this.agregarDato("Cantante favorito", "Ed Sheeran");
-    this.agregarDato("Colegio", "Innova Schools");
+    this.agregarDato("Cantante favorito", "Selena Gomez");
+    this.agregarDato("Colegio", "San Pedro de Chorrillos");
   }
 
   agregarDato(nuevoTitulo: string, nuevoDato: string) {
